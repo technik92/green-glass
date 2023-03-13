@@ -7,6 +7,7 @@ import PageIllustration from "@/partials/PageIllustration";
 import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
 import Process from "@/partials/Process";
+import News from "@/partials/News";
 
 export default function Home() {
   return (
@@ -18,15 +19,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main class="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
-        <Header />
-        <HeroHome />
-        <PageIllustration />
-        <HeroHome />
-        <Tabs />
-        <Testimonials />
-        <FeaturesHome />
-        <Process />
-        <Footer />
+        <div className="flex flex-col min-h-screen overflow-hidden">
+          <Header />
+          <HeroHome />
+          <Process />
+          <PageIllustration />
+          <Tabs />
+          <News />
+          <Testimonials />
+          <FeaturesHome />
+          <Footer />
+        </div>
       </main>
     </>
   );
