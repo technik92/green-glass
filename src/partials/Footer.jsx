@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
                 {/* Logo */}
                 <Link href="/" className="inline-block" aria-label="Cruip">
                   <svg
-                    className="w-8 h-8 fill-current text-purple-600"
+                    className="w-8 h-8 fill-current text-green-600"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -165,7 +165,7 @@ function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Twitter"
                 >
                   <svg
@@ -180,7 +180,7 @@ function Footer() {
               <li className="ml-4">
                 <Link
                   href="#"
-                  className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Github"
                 >
                   <svg
@@ -195,7 +195,7 @@ function Footer() {
               <li className="ml-4">
                 <Link
                   href="#"
-                  className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Facebook"
                 >
                   <svg
@@ -210,7 +210,7 @@ function Footer() {
               <li className="ml-4">
                 <Link
                   href="#"
-                  className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Instagram"
                 >
                   <svg
@@ -227,7 +227,7 @@ function Footer() {
               <li className="ml-4">
                 <Link
                   href="#"
-                  className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Linkedin"
                 >
                   <svg

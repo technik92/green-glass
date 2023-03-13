@@ -62,7 +62,7 @@ function Tabs() {
                 onClick={() => setTab(1)}
               >
                 <svg
-                  className="w-4 h-4 fill-current text-purple-600 mr-2"
+                  className="w-4 h-4 fill-current text-green-600 mr-2"
                   viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -79,7 +79,7 @@ function Tabs() {
                 onClick={() => setTab(2)}
               >
                 <svg
-                  className="w-4 h-4 fill-current text-purple-600 mr-2"
+                  className="w-4 h-4 fill-current text-green-600 mr-2"
                   viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -96,7 +96,7 @@ function Tabs() {
                 onClick={() => setTab(3)}
               >
                 <svg
-                  className="w-4 h-4 fill-current text-purple-600 mr-2"
+                  className="w-4 h-4 fill-current text-green-600 mr-2"
                   viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -113,7 +113,7 @@ function Tabs() {
                 onClick={() => setTab(4)}
               >
                 <svg
-                  className="w-4 h-4 fill-current text-purple-600 mr-2"
+                  className="w-4 h-4 fill-current text-green-600 mr-2"
                   viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -130,7 +130,7 @@ function Tabs() {
                 onClick={() => setTab(5)}
               >
                 <svg
-                  className="w-4 h-4 fill-current text-purple-600 mr-2"
+                  className="w-4 h-4 fill-current text-green-600 mr-2"
                   viewBox="0 0 16 16"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -183,12 +183,12 @@ function Tabs() {
                       esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <a
-                      className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
                       href="#0"
                     >
                       <span className="text-sm">Learn more</span>
                       <svg
-                        className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2"
+                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -234,12 +234,12 @@ function Tabs() {
                       esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <a
-                      className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
                       href="#0"
                     >
                       <span className="text-sm">Learn more</span>
                       <svg
-                        className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2"
+                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -285,12 +285,12 @@ function Tabs() {
                       esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <a
-                      className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
                       href="#0"
                     >
                       <span className="text-sm">Learn more</span>
                       <svg
-                        className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2"
+                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -336,12 +336,12 @@ function Tabs() {
                       esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <a
-                      className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
                       href="#0"
                     >
                       <span className="text-sm">Learn more</span>
                       <svg
-                        className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2"
+                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -387,12 +387,12 @@ function Tabs() {
                       esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <a
-                      className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
                       href="#0"
                     >
                       <span className="text-sm">Learn more</span>
                       <svg
-                        className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2"
+                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >

@@ -44,13 +44,13 @@ function Process() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
-                  className="fill-current text-purple-600"
+                  className="fill-current text-green-600"
                   width="64"
                   height="64"
                   rx="32"
                 />
                 <path
-                  className="stroke-current text-purple-300"
+                  className="stroke-current text-green-300"
                   strokeWidth="2"
                   strokeLinecap="square"
                   d="M21 23h22v18H21z"
@@ -58,7 +58,7 @@ function Process() {
                   fillRule="evenodd"
                 />
                 <path
-                  className="stroke-current text-purple-100"
+                  className="stroke-current text-green-100"
                   d="M26 28h12M26 32h12M26 36h5"
                   strokeWidth="2"
                   strokeLinecap="square"
@@ -96,20 +96,20 @@ function Process() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
-                  className="fill-current text-purple-600"
+                  className="fill-current text-green-600"
                   width="64"
                   height="64"
                   rx="32"
                 />
                 <g fill="none" fillRule="evenodd">
                   <path
-                    className="stroke-current text-purple-300"
+                    className="stroke-current text-green-300"
                     d="M40 22a2 2 0 012 2v16a2 2 0 01-2 2H24a2 2 0 01-2-2V24a2 2 0 012-2"
                     strokeWidth="2"
                     strokeLinecap="square"
                   />
                   <path
-                    className="stroke-current text-purple-100"
+                    className="stroke-current text-green-100"
                     strokeWidth="2"
                     strokeLinecap="square"
                     d="M36 32l-4-3-4 3V22h8z"
@@ -137,13 +137,13 @@ function Process() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
-                  className="fill-current text-purple-600"
+                  className="fill-current text-green-600"
                   width="64"
                   height="64"
                   rx="32"
                 />
                 <path
-                  className="stroke-current text-purple-300"
+                  className="stroke-current text-green-300"
                   strokeWidth="2"
                   strokeLinecap="square"
                   d="M21 35l4 4 12-15"
@@ -151,7 +151,7 @@ function Process() {
                   fillRule="evenodd"
                 />
                 <path
-                  className="stroke-current text-purple-100"
+                  className="stroke-current text-green-100"
                   d="M42 29h-3M42 34h-7M42 39H31"
                   strokeWidth="2"
                   strokeLinecap="square"

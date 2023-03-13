@@ -34,7 +34,7 @@ function FeaturesHome() {
                     viewBox="0 0 540 520"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g className="fill-current text-purple-600">
+                    <g className="fill-current text-green-600">
                       <circle className="pulse" cx="270" cy="260" r="64" />
                       <circle
                         className="pulse pulse-1"
@@ -65,7 +65,7 @@ function FeaturesHome() {
                 data-aos-anchor="[data-aos-id-features-home]"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                  <div className="font-architects-daughter text-xl text-green-600 mb-2">
                     Lighting fast workflow
                   </div>
                   <h3 className="h3 mb-3">Say hello to research data</h3>
@@ -145,7 +145,7 @@ function FeaturesHome() {
                         </cite>{" "}
                         -{" "}
                         <a
-                          className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                          className="text-green-600 hover:text-gray-200 transition duration-150 ease-in-out"
                           href="#0"
                         >
                           UX Board

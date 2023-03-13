@@ -44,7 +44,7 @@ function Header() {
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
               <svg
-                className="w-8 h-8 fill-current text-purple-600"
+                className="w-8 h-8 fill-current text-green-600"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -95,7 +95,7 @@ function Header() {
                 <li>
                   <Link
                     href="/contact"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
+                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
                   >
                     Contact us
                   </Link>
@@ -103,7 +103,7 @@ function Header() {
                 <li>
                   <Link
                     href="/help"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
+                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
                   >
                     Help center
                   </Link>
@@ -111,7 +111,7 @@ function Header() {
                 <li>
                   <Link
                     href="/404"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
+                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
                   >
                     404
                   </Link>
@@ -124,7 +124,7 @@ function Header() {
               <li>
                 <Link
                   href="/signin"
-                  className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-green-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Sign in
                 </Link>
@@ -132,7 +132,7 @@ function Header() {
               <li>
                 <Link
                   href="/signup"
-                  className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
+                  className="btn-sm text-white bg-green-600 hover:bg-green-700 ml-3"
                 >
                   Sign up
                 </Link>
@@ -238,7 +238,7 @@ function Header() {
                 <li>
                   <Link
                     href="/signin"
-                    className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
+                    className="flex font-medium w-full text-green-600 hover:text-gray-200 py-2 justify-center"
                   >
                     Sign in
                   </Link>
@@ -246,7 +246,7 @@ function Header() {
                 <li>
                   <Link
                     href="/signup"
-                    className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+                    className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out"
                   >
                     Sign up
                   </Link>

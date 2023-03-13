@@ -1,5 +1,12 @@
 import Head from "next/head";
 import Header from "@/partials/Header";
+import FeaturesHome from "@/partials/FeaturesHome";
+import Footer from "@/partials/Footer";
+import HeroHome from "@/partials/HeroHome";
+import PageIllustration from "@/partials/PageIllustration";
+import Tabs from "@/partials/Tabs";
+import Testimonials from "@/partials/Testimonials";
+import Process from "@/partials/Process";
 
 export default function Home() {
   return (
@@ -10,9 +17,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>green</h1>
+      <main class="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
         <Header />
+        <HeroHome />
+        <PageIllustration />
+        <HeroHome />
+        <Tabs />
+        <Testimonials />
+        <FeaturesHome />
+        <Process />
+        <Footer />
       </main>
     </>
   );

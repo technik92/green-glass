@@ -41,7 +41,7 @@ function PageNotFound() {
                     alt="404"
                   />
                   <svg
-                    className="w-20 h-20 fill-current text-purple-600 absolute top-0 right-0 -mr-6"
+                    className="w-20 h-20 fill-current text-green-600 absolute top-0 right-0 -mr-6"
                     width="84"
                     height="80"
                     xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ function PageNotFound() {
                   Head to our{" "}
                   <Link
                     href="/"
-                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                    className="text-green-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   >
                     homepage
                   </Link>{" "}
