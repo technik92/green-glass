@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import HeroImage from "../images/logo2.png";
 import Image from "next/image";
 

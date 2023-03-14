@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition";
+import Image from "next/image";
 
 import TabsImage01 from "../images/tabs-image-01.jpg";
 import HeroImage01 from "../images/hero-image-01.jpg";
-import Image from "next/image";
 
 function Tabs() {
   const [tab, setTab] = useState(1);

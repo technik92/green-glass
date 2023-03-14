@@ -1,5 +1,4 @@
 import React from "react";
-
 import FeatIllustration from "../images/features-illustration.png";
 import FeatAvatar from "../images/features-avatar.jpg";
 import Image from "next/image";
