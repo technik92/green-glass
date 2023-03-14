@@ -48,8 +48,8 @@ function Header() {
               <Image
                 className="rounded-full shrink-0 mr-4"
                 src={Logo}
-                width="40"
-                height="40"
+                width="60"
+                height="60"
                 alt="Author 01"
               />
             </Link>
