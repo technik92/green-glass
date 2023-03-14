@@ -3,8 +3,6 @@ import HeroImage from "../images/logo2.png";
 import Image from "next/image";
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">

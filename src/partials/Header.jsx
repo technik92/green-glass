@@ -46,7 +46,7 @@ function Header() {
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
               <Image
-                className="rounded-full shrink-0 mr-4"
+                className="shrink-0 mr-4"
                 src={Logo}
                 width="60"
                 height="60"

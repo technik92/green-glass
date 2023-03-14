@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main class="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
+      <main className="grow">
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           <HeroHome />
