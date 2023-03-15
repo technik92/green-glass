@@ -38,7 +38,7 @@ function Header() {
   });
 
   return (
-    <header className="absolute w-full z-30">
+    <header className="absolute w-full z-30 mt-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -189,7 +189,7 @@ function Header() {
                     About us
                   </Link>
                 </li>
-                <li className="py-2 my-2 border-t border-b border-gray-700">
+                <li className="py-2 my-2 border-t border-b border-zinc-700">
                   <span className="flex text-gray-300 py-2">Support</span>
                   <ul className="pl-4">
                     <li>

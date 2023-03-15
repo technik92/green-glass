@@ -9,7 +9,7 @@ function Testimonials() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-12 md:py-20 border-t border-zinc-700">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Do not take our word for it</h2>
@@ -51,7 +51,7 @@ function Testimonials() {
                 24 hours now and I honestly do dot know how I functioned without
                 it before.
               </blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-zinc-700">
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a
@@ -93,7 +93,7 @@ function Testimonials() {
                 24 hours now and I honestly do not know how I functioned without
                 it before.
               </blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-zinc-700">
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a
@@ -135,7 +135,7 @@ function Testimonials() {
                 24 hours now and I honestly do not know how I functioned without
                 it before.
               </blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-zinc-700">
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a

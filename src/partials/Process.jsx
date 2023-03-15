@@ -81,7 +81,7 @@ function Process() {
             >
               <div
                 aria-hidden="true"
-                className="absolute h-1 border-t border-dashed border-gray-700 hidden md:block"
+                className="absolute h-1 border-t border-dashed border-zinc-700 hidden md:block"
                 style={{
                   width: "calc(100% - 32px)",
                   left: "calc(50% + 48px)",

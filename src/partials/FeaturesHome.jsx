@@ -7,7 +7,7 @@ function FeaturesHome() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-12 md:py-20 border-t border-zinc-700">
           {/* Items */}
           <div className="grid gap-20" data-aos-id-features-home>
             {/* Item */}
