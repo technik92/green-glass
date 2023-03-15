@@ -1,4 +1,5 @@
 import "@/css/globals.css";
+import "@/css/style.css"
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
