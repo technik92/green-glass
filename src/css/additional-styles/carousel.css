@@ -1,0 +1,132 @@
+.carousel-container {
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+  display: flex;
+  max-width: 72rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  user-select: none;
+}
+
+.carousel__item {
+  color: black;
+  display: grid;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  place-items: center;
+  transition: 1s ease-in-out;
+  user-select: none;
+  width: 100%;
+  user-select: none;
+}
+
+.carousel__controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.controls__arrow {
+  height: 35px;
+  width: 35px;
+  user-select: none;
+}
+
+.carousel__indicators {
+  bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  user-select: none;
+}
+
+.carousel__indicator {
+  background-color: #16a34a;
+  height: 5px;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+  width: 20px;
+}
+
+.carousel__indicator--active {
+  opacity: 1;
+  width: 30px;
+}
+
+@media screen and (min-width: 640px) {
+  .controls__arrow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel__indicator {
+    height: 8px;
+    width: 30px;
+  }
+
+  .carousel__indicator--active {
+    opacity: 1;
+    width: 40px;
+  }
+
+  .carousel__indicators {
+    bottom: 1rem;
+  }
+
+  .carousel__controls {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .controls__arrow {
+    height: 45px;
+    width: 45px;
+  }
+
+  .carousel__indicator {
+    height: 8px;
+    width: 35px;
+  }
+
+  .carousel__indicator--active {
+    width: 50px;
+  }
+
+  .carousel__controls {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .controls__arrow {
+    height: 55px;
+    width: 55px;
+  }
+
+  .carousel__indicators {
+    bottom: 1.5rem;
+  }
+
+  .carousel__indicator {
+    height: 10px;
+    width: 45px;
+  }
+
+  .carousel__indicator--active {
+    width: 60px;
+  }
+}
