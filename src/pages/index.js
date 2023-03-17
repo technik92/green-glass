@@ -8,6 +8,7 @@ import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
 import Process from "@/partials/Process";
 import News from "@/partials/News";
+import Carousel from "@/partials/Carousel";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <PageIllustration />
           <Tabs />
           <News />
+          <Carousel />
           <Testimonials />
           <FeaturesHome />
           <Footer />
