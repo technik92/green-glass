@@ -11,7 +11,6 @@ function Header() {
   const trigger = useRef(null);
   const mobileNav = useRef(null);
 
-  // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return;
@@ -27,7 +26,6 @@ function Header() {
     return () => document.removeEventListener("click", clickHandler);
   });
 
-  // close the mobile menu if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }) => {
       if (!mobileNavOpen || keyCode !== 27) return;
@@ -41,9 +39,7 @@ function Header() {
     <header className="absolute w-full z-30 mt-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Site branding */}
           <div className="shrink-0 mr-4">
-            {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
               <Image
                 className="shrink-0 mr-4"
@@ -54,77 +50,60 @@ function Header() {
               />
             </Link>
           </div>
-
-          {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
-            {/* Desktop menu links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/features"
+                  href="/"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Features
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#aboutUs"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Pricing
+                  O nas
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/#advantages"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Blog
+                  Nasze atuty
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/#carousel"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  About us
+                  Galeria realizacji
                 </Link>
               </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Support">
-                {/* 2nd level: hover */}
-                <li>
-                  <Link
-                    href="/contact"
-                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
-                  >
-                    Contact us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/help"
-                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
-                  >
-                    Help center
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/404"
-                    className="font-medium text-sm text-gray-400 hover:text-green-600 flex py-2 px-4 leading-tight"
-                  >
-                    404
-                  </Link>
-                </li>
-              </Dropdown>
+              <li>
+                <Link
+                  href="/#testimonials"
+                  className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Opinie klientów
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#contact"
+                  className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Kontakt
+                </Link>
+              </li>
             </ul>
           </nav>
 
-          {/* Mobile menu */}
           <div className="md:hidden">
-            {/* Hamburger button */}
             <button
               ref={trigger}
               className={`hamburger ${mobileNavOpen && "active"}`}
@@ -143,8 +122,6 @@ function Header() {
                 <rect y="18" width="24" height="2" rx="1" />
               </svg>
             </button>
-
-            {/*Mobile navigation */}
             <nav
               id="mobile-nav"
               ref={mobileNav}
@@ -158,65 +135,51 @@ function Header() {
               <ul className="bg-gray-800 px-4 py-2">
                 <li>
                   <Link
-                    href="/features"
+                    href="/"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  gi
-                  <Link
-                    href="/pricing"
-                    className="flex text-gray-300 hover:text-gray-200 py-2"
-                  >
-                    Pricing
+                    Home
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/blog"
+                    href="/#aboutUs"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
-                    Blog
+                    O nas
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/#advantages"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
-                    About us
+                    Nasze atuty
                   </Link>
                 </li>
-                <li className="py-2 my-2 border-t border-b border-zinc-700">
-                  <span className="flex text-gray-300 py-2">Support</span>
-                  <ul className="pl-4">
-                    <li>
-                      <Link
-                        href="/contact"
-                        className="text-sm flex font-medium text-gray-400 hover:text-gray-200 py-2"
-                      >
-                        Contact us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/help"
-                        className="text-sm flex font-medium text-gray-400 hover:text-gray-200 py-2"
-                      >
-                        Help center
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/404"
-                        className="text-sm flex font-medium text-gray-400 hover:text-gray-200 py-2"
-                      >
-                        404
-                      </Link>
-                    </li>
-                  </ul>
+                <li>
+                  <Link
+                    href="/#carousel"
+                    className="flex text-gray-300 hover:text-gray-200 py-2"
+                  >
+                    Galeria realizacji
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#testimonials"
+                    className="flex text-gray-300 hover:text-gray-200 py-2"
+                  >
+                    Opinie klientów
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#contact"
+                    className="flex text-gray-300 hover:text-gray-200 py-2"
+                  >
+                    Kontakt{" "}
+                  </Link>
                 </li>
               </ul>
             </nav>

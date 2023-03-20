@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Header from "@/partials/Header";
-import FeaturesHome from "@/partials/FeaturesHome";
 import Footer from "@/partials/Footer";
 import HeroHome from "@/partials/HeroHome";
 import PageIllustration from "@/partials/PageIllustration";
 import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
 import Process from "@/partials/Process";
-import News from "@/partials/News";
 import Carousel from "@/partials/Carousel";
+import Contact from "@/partials/Contact";
 
 export default function Home() {
   return (
@@ -26,10 +25,9 @@ export default function Home() {
           <Process />
           <PageIllustration />
           <Tabs />
-          <News />
           <Carousel />
           <Testimonials />
-          <FeaturesHome />
+          <Contact />
           <Footer />
         </div>
       </main>
