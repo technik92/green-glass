@@ -6,7 +6,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer>
-      <div id="contact" className="py-12 md:py-16">
+      <div className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="md:flex md:items-center md:justify-between">
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
