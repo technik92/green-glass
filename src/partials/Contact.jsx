@@ -15,13 +15,13 @@ function Contact() {
       <div id="contact" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t  border-zinc-700">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center" data-aos-id-tabs>
+          <div className="max-w-3xl mx-auto text-center mb-10" data-aos-id-tabs>
             <h2
               className="h2 mb-4"
               data-aos="fade-up"
               data-aos-anchor="[data-aos-id-tabs]"
             >
-              Kontakt{" "}
+              Kontakt
             </h2>
             <p
               className="text-xl text-gray-400"
@@ -32,92 +32,53 @@ function Contact() {
               Skontaktuj się z nami
             </p>
           </div>
-          <div>
-            <div className="relative flex flex-col mt-16" data-aos="fade-up">
-              <article className="flex max-w-md mx-auto md:max-w-none">
-                <div
-                  className="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                >
-                  <Image
-                    className="w-full h-full object-cover"
-                    src={CompanyCar}
-                    width="200"
-                    height="287"
-                    alt="Out service car"
-                  />
-                </div>
-                <div className="relative bg-gray-800  text-green-400 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
-                  <div
-                    className="text-lg max-w-3xl mx-auto text-center pb-12"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <a
-                      href="tel:+48731188388"
-                      className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                      aria-label="Phone"
-                    >
-                      <p className="px-2">
-                        <AiOutlinePhone />
-                      </p>
-                      +48 731 188 388
-                    </a>
-                  </div>
-                  <div
-                    className="text-lg  max-w-3xl mx-auto text-center pb-12"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <a
-                      href="mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
-                      target="_blank"
-                      className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                      aria-label="E-mail"
-                    >
-                      <p className="px-2">
-                        <AiOutlineMail />
-                      </p>
-                      autoszybybielsko@gmail.com
-                    </a>
-                  </div>
-                  <div
-                    className="text-lg  max-w-3xl mx-auto text-center pb-12"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <a
-                      href="https://www.facebook.com/greenglassbielsko"
-                      target="_blank"
-                      className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                      aria-label="Facebook"
-                    >
-                      <p className="px-2">
-                        <AiOutlineFacebook />
-                      </p>
-                      Nasz profil na Facebooku
-                    </a>
-                  </div>
-                  <div
-                    className="text-lg  max-w-3xl mx-auto text-center pb-12"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
-                    <a
-                      href="https://www.instagram.com/greenglassbielsko/"
-                      target="_blank"
-                      className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                      aria-label="Instagram"
-                    >
-                      <p className="px-2">
-                        <AiOutlineInstagram />
-                      </p>
-                      Nasz profil na Instagranie
-                    </a>
-                  </div>
-                </div>
-              </article>
+          <div
+            className="flex flex-col md:flex-row bg-gray-800 px-6 py-4 gap-6 max-w-md mx-auto md:max-w-none md:py-8 md:px-12"
+            data-aos="fade-up"
+          >
+            <Image
+              className="rounded-md max-h-72 md:max-h-none md:max-w-[35%] w-full h-full object-cover"
+              src={CompanyCar}
+              width="auto"
+              height="auto"
+              alt="Out service car"
+            />
+            <div className="flex flex-col gap-4 justify-around mx-auto text-lg md:text-xl">
+              <a
+                href="tel:+48731188388"
+                className="flex justify-center gap-2 px-5 items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
+                aria-label="Phone"
+              >
+                <AiOutlinePhone />
+                +48 731 188 388
+              </a>
+              <a
+                href="mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
+                target="_blank"
+                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
+                aria-label="E-mail"
+              >
+                <AiOutlineMail />
+                autoszybybielsko@gmail.com
+              </a>
+              <a
+                href="https://www.facebook.com/greenglassbielsko"
+                target="_blank"
+                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
+                aria-label="Facebook"
+              >
+                <AiOutlineFacebook />
+                Nasz profil na Facebooku
+              </a>
+              <a
+                href="https://www.instagram.com/greenglassbielsko/"
+                target="_blank"
+                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
+                aria-label="Instagram"
+              >
+                <AiOutlineInstagram />
+                Nasz profil na Instagranie
+              </a>
             </div>
           </div>
         </div>

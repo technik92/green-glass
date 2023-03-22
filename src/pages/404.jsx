@@ -62,12 +62,12 @@ function PageNotFound() {
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  Head to our
+                  Head to our{" "}
                   <Link
                     href="/"
                     className="text-green-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   >
-                    homepage
+                    homepage{" "}
                   </Link>
                   that does exist, or try double-checking the URL.
                 </p>
