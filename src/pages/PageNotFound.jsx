@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Image from "next/image";
 
 import Header from "../partials/Header";
@@ -62,13 +62,13 @@ function PageNotFound() {
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  Head to our{" "}
+                  Head to our
                   <Link
                     href="/"
                     className="text-green-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   >
                     homepage
-                  </Link>{" "}
+                  </Link>
                   that does exist, or try double-checking the URL.
                 </p>
               </div>
