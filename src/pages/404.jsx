@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Image from "next/image";
 
 import Header from "../partials/Header";
