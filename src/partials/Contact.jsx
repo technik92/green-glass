@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import {
   AiOutlinePhone,
@@ -10,6 +10,25 @@ import {
 import CompanyCar from "../images/car.jpg";
 
 function Contact() {
+  const [isHovering, setIsHovering] = useState({
+    phoneNumber: false,
+    mail: false,
+    facebook: false,
+    instagram: false,
+  });
+
+  const handleHover = (event) => {
+    const elementName = event.currentTarget.id;
+
+    setIsHovering({ ...isHovering, [elementName]: true });
+  };
+
+  const handleMouseOut = (event) => {
+    const elementName = event.currentTarget.id;
+
+    setIsHovering({ ...isHovering, [elementName]: false });
+  };
+
   return (
     <section>
       <div id="contact" className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -33,53 +52,80 @@ function Contact() {
             </p>
           </div>
           <div
-            className="flex flex-col md:flex-row bg-gray-800 px-6 py-4 gap-6 max-w-md mx-auto md:max-w-none md:py-8 md:px-12"
+            className="bg-gray-800 grid grid-cols-1 md:grid-cols-3 px-6 py-4 gap-4 max-w-md md:max-w-none md:py-8 md:px-12 mx-auto"
             data-aos="fade-up"
           >
             <Image
-              className="rounded-md max-h-72 md:max-h-none md:max-w-[35%] w-full h-full object-cover"
+              className="md:row-span-2"
               src={CompanyCar}
-              width="auto"
+              alt="company car"
               height="auto"
-              alt="Out service car"
+              width="auto"
             />
-            <div className="flex flex-col gap-4 justify-around mx-auto text-lg md:text-xl">
-              <a
-                href="tel:+48731188388"
-                className="flex justify-center gap-2 px-5 items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                aria-label="Phone"
-              >
-                <AiOutlinePhone />
-                +48 731 188 388
-              </a>
-              <a
-                href="mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
-                target="_blank"
-                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                aria-label="E-mail"
-              >
-                <AiOutlineMail />
-                autoszybybielsko@gmail.com
-              </a>
-              <a
-                href="https://www.facebook.com/greenglassbielsko"
-                target="_blank"
-                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                aria-label="Facebook"
-              >
-                <AiOutlineFacebook />
-                Nasz profil na Facebooku
-              </a>
-              <a
-                href="https://www.instagram.com/greenglassbielsko/"
-                target="_blank"
-                className="flex justify-center items-center gap-2 px-5 text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
-                aria-label="Instagram"
-              >
-                <AiOutlineInstagram />
-                Nasz profil na Instagranie
-              </a>
-            </div>
+
+            <a
+              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm hover:bg-green-600 group"
+              href="tel:+48731188388"
+              id="phoneNumber"
+              onMouseOver={handleHover}
+              onMouseOut={handleMouseOut}
+            >
+              <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
+                <AiOutlinePhone
+                  className="h-4 w-4"
+                  color={isHovering.phoneNumber ? "#16a34a" : ""}
+                />
+              </div>
+              +48 731 188 388
+            </a>
+            <a
+              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              href="mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
+              target="_blank"
+              id="mail"
+              onMouseOver={handleHover}
+              onMouseOut={handleMouseOut}
+            >
+              <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
+                <AiOutlineMail
+                  className="h-4 w-4"
+                  color={isHovering.mail ? "#16a34a" : ""}
+                />
+              </div>
+              autoszybybielsko@gmail.com
+            </a>
+            <a
+              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              href="https://www.facebook.com/greenglassbielsko"
+              target="_blank"
+              id="facebook"
+              onMouseOver={handleHover}
+              onMouseOut={handleMouseOut}
+            >
+              <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
+                <AiOutlineFacebook
+                  className="h-4 w-4"
+                  color={isHovering.facebook ? "#16a34a" : ""}
+                />
+              </div>
+              Nasz profil na Facebooku
+            </a>
+            <a
+              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              href="https://www.instagram.com/greenglassbielsko/"
+              target="_blank"
+              id="instagram"
+              onMouseOver={handleHover}
+              onMouseOut={handleMouseOut}
+            >
+              <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
+                <AiOutlineInstagram
+                  className="h-4 w-4"
+                  color={isHovering.instagram ? "#16a34a" : ""}
+                />
+              </div>
+              Nasz profil na Instagramie
+            </a>
           </div>
         </div>
       </div>
