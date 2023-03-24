@@ -62,7 +62,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#aboutUs"
+                  href="/#o-nas"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   O nas
@@ -70,7 +70,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#advantages"
+                  href="/#nasze-atuty"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Nasze atuty
@@ -78,7 +78,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#carousel"
+                  href="/#galeria-realizacji"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Galeria realizacji
@@ -86,7 +86,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#testimonials"
+                  href="/#opinie-klientow"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Opinie klientów
@@ -94,7 +94,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#contact"
+                  href="/#kontakt"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Kontakt
@@ -143,7 +143,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#aboutUs"
+                    href="/#o-nas"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     O nas
@@ -151,7 +151,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#advantages"
+                    href="/#nasze-atuty"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Nasze atuty
@@ -159,7 +159,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#carousel"
+                    href="/#galeria-realizacji"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Galeria realizacji
@@ -167,7 +167,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#testimonials"
+                    href="/#opinie-klientow"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Opinie klientów
@@ -175,7 +175,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#contact"
+                    href="/#kontakt"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Kontakt{" "}

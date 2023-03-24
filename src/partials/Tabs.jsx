@@ -24,7 +24,7 @@ function Tabs() {
 
   return (
     <section>
-      <div id="advantages" className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div id="nasze-atuty" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-zinc-700">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>

@@ -5,7 +5,7 @@ import HeroHome from "@/partials/HeroHome";
 import PageIllustration from "@/partials/PageIllustration";
 import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
-import Process from "@/partials/Process";
+import AboutAs from "@/partials/AboutAs";
 import Carousel from "@/partials/Carousel";
 import Contact from "@/partials/Contact";
 
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           <HeroHome />
-          <Process />
+          <AboutAs />
           <PageIllustration />
           <Tabs />
           <Carousel />

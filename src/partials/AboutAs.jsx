@@ -1,9 +1,9 @@
 import React from "react";
 
-function Process() {
+function AboutAs() {
   return (
     <section>
-      <div id="aboutUs" className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div id="o-nas" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-10 pb-12 md:pt-16 md:pb-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
@@ -172,4 +172,4 @@ function Process() {
   );
 }
 
-export default Process;
+export default AboutAs;

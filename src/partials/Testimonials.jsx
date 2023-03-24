@@ -8,7 +8,7 @@ import TestimonialImage03 from "../images/testimonial-03.jpg";
 function Testimonials() {
   return (
     <section>
-      <div id="testimonials" className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div id="opinie-klientow" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-zinc-700">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
