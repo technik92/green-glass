@@ -78,7 +78,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#galeria-realizacji"
+                  href="/#galeria"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Galeria realizacji
@@ -86,7 +86,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#opinie-klientow"
+                  href="/#opinie"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Opinie klientów
@@ -159,7 +159,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#galeria-realizacji"
+                    href="/#galeria"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Galeria realizacji
@@ -167,7 +167,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#opinie-klientow"
+                    href="/#opinie"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Opinie klientów
