@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "better-react-carousel";
 import Image from "next/image";
-
-import image1 from "../images/carousel/carousel1.jpg";
-import image2 from "../images/carousel/carousel2.jpg";
-import image3 from "../images/carousel/carousel3.jpg";
+import image1 from "../images/carousel/001.jpg";
+import image2 from "../images/carousel/002.jpg";
+import image3 from "../images/carousel/003.jpg";
+import image4 from "../images/carousel/004.jpg";
+import image5 from "../images/carousel/005.jpeg";
+import image6 from "../images/carousel/006.jpeg";
 
 const Carousel2 = () => {
   return (
@@ -28,33 +30,27 @@ const Carousel2 = () => {
               className="max-w-sm mx-auto md:max-w-none"
               data-aos="fade-left"
             >
-              <div className="grid gap-12 md:grid-cols-1 md:gap-x-6 md:gap-y-8 items-start">
+              <div className="grid gap-12 md:grid-cols-1 md:gap-x-6 md:gap-y-8 items-start	">
                 <div>
-                  <Carousel>
-                    <div>
-                      <Image
-                        src={image1}
-                        alt="car, glass, repair"
-                        width="800"
-                        height="400"
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src={image2}
-                        alt="car, glass, repair"
-                        width="800"
-                        height="400"
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src={image3}
-                        alt="car, glass, repair"
-                        width="800"
-                        height="400"
-                      />
-                    </div>
+                  <Carousel cols={2} rows={1} loop scrollSnap height="200">
+                    <Carousel.Item>
+                      <Image width="100%" height="380" src={image1} alt="" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Image width="100%" src={image2} alt="" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Image width="100%" src={image3} alt="" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Image width="100%" src={image4} alt="" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Image width="100%" src={image5} alt="" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Image width="100%" src={image6} alt="" />
+                    </Carousel.Item>
                   </Carousel>
                 </div>
               </div>
