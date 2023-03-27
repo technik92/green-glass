@@ -26,6 +26,7 @@ function AboutAs() {
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
+              data-aos-delay="200"
             >
               <div
                 aria-hidden="true"
@@ -36,7 +37,7 @@ function AboutAs() {
                   top: "32px",
                 }}
                 data-aos="fade-in"
-                data-aos-delay="200"
+                data-aos-delay="100"
               ></div>
               <svg
                 className="w-16 h-16 mb-4"
@@ -77,7 +78,7 @@ function AboutAs() {
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="300"
             >
               <div
                 aria-hidden="true"
@@ -129,7 +130,7 @@ function AboutAs() {
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="500"
             >
               <svg
                 className="w-16 h-16 mb-4"
