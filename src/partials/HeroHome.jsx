@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../images/logo2.png";
 import Image from "next/image";
 
-function HeroHome() {
+function HeroHome({ header, description }) {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -16,17 +16,14 @@ function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Witamy w Green Glass!{" "}
+              {header}
             </h1>
             <p
               className="text-xl text-gray-400 mb-8"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Jeśli coś z jezdni poleciało prosto w Twoją szybę albo po prostu
-              sam nawarzyłeś piwa, nie przejmuj się! Pomożemy Ci je wypić.
-              Jesteśmy dla Ciebie — konkurencyjne ceny oraz praca na najlepszej
-              chemii (aktywator, kleje). To oznacza jakość bez kompromisów.
+              {description}
             </p>
           </div>
 
