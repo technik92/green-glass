@@ -20,6 +20,31 @@ export default function Home({ websiteData }) {
     aboutUsDescription,
     aboutUsCharacteristicsHeaders,
     aboutUsCharacteristicsDescriptions,
+    tabHeader,
+    tabsDescription,
+    tabsButtonsTitles,
+    tabsButtonsDescription,
+    tabsDescription1,
+    tabsDescription2,
+    tabsDescription3,
+    tabsDescription4,
+    tabsDescription5,
+    carouselHeader,
+    carouselDescription,
+    testimonialsHeader,
+    testimonialsDescription,
+    testimonialsNamesClients,
+    testimonialsClientOpinion1,
+    testimonialsClientOpinion2,
+    testimonialsClientOpinion3,
+    contactHeader,
+    contactDescription,
+    contactPhoneNumber,
+    contactEmailAddress,
+    contactFirstSocialTitle,
+    contactFirstSocialLink,
+    contactSecondSocialTitle,
+    contactSecondSocialLink,
   } = websiteData;
 
   return (
@@ -41,10 +66,36 @@ export default function Home({ websiteData }) {
             charasteristicsDescriptions={aboutUsCharacteristicsDescriptions}
           />
           <PageIllustration />
-          <Tabs />
-          <Carousel />
-          <Testimonials />
-          <Contact />
+          <Tabs
+            header={tabHeader}
+            description={tabsDescription}
+            buttonTitles={tabsButtonsTitles}
+            titlesOfDescription={tabsButtonsDescription}
+            descriptionContent1={tabsDescription1}
+            descriptionContent2={tabsDescription2}
+            descriptionContent3={tabsDescription3}
+            descriptionContent4={tabsDescription4}
+            descriptionContent5={tabsDescription5}
+          />
+          <Carousel header={carouselHeader} description={carouselDescription} />
+          <Testimonials
+            header={testimonialsHeader}
+            description={testimonialsDescription}
+            namesClients={testimonialsNamesClients}
+            firstClientOpinion={testimonialsClientOpinion1}
+            secondClientOpinion={testimonialsClientOpinion2}
+            thirdClientOpinion={testimonialsClientOpinion3}
+          />
+          <Contact
+            header={contactHeader}
+            description={contactDescription}
+            phoneNumber={contactPhoneNumber}
+            emailAddress={contactEmailAddress}
+            firstSocialTitle={contactFirstSocialTitle}
+            firstSocialLink={contactFirstSocialLink}
+            secondSocialTitle={contactSecondSocialTitle}
+            secondSocialLink={contactSecondSocialLink}
+          />
           <Footer />
         </div>
       </main>

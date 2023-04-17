@@ -5,7 +5,33 @@ import Image from "next/image";
 import TabsImage01 from "../images/tabs-image-01.jpg";
 import HeroImage01 from "../images/hero-image-01.jpg";
 
-function Tabs() {
+function Tabs({
+  header,
+  description,
+  buttonTitles,
+  titlesOfDescription,
+  descriptionContent1,
+  descriptionContent2,
+  descriptionContent3,
+  descriptionContent4,
+  descriptionContent5,
+}) {
+  const [
+    firstButtonDescription,
+    secondButtonDescription,
+    thirdButtonDescription,
+    fourthButtonDescription,
+    fifthButtonDescription,
+  ] = buttonTitles;
+
+  const [
+    firstTitlesOfDescription,
+    secondTitlesOfDescription,
+    thirdTitlesOfDescription,
+    fourthTitlesOfDescription,
+    fifthTitlesOfDescription,
+  ] = titlesOfDescription;
+
   const [tab, setTab] = useState(1);
 
   const tabs = useRef(null);
@@ -33,7 +59,7 @@ function Tabs() {
               data-aos="fade-up"
               data-aos-anchor="[data-aos-id-tabs]"
             >
-              Nasze atuty{" "}
+              {header}
             </h2>
             <p
               className="text-xl text-gray-400"
@@ -41,8 +67,7 @@ function Tabs() {
               data-aos-delay="200"
               data-aos-anchor="[data-aos-id-tabs]"
             >
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit laborum — semper quis lectus nulla.
+              {description}
             </p>
           </div>
 
@@ -69,7 +94,7 @@ function Tabs() {
                   <path d="M13.5 5.5c-.311.001-.62.061-.909.177l-2.268-2.268c.116-.29.176-.598.177-.909a2.5 2.5 0 00-5 0c.001.311.061.62.177.909L3.409 5.677A2.473 2.473 0 002.5 5.5a2.5 2.5 0 000 5c.311-.001.62-.061.909-.177l2.268 2.268c-.116.29-.176.598-.177.909a2.5 2.5 0 105 0 2.473 2.473 0 00-.177-.909l2.268-2.268c.29.116.598.176.909.177a2.5 2.5 0 100-5zM8 11c-.311.001-.62.061-.909.177L4.823 8.909a2.423 2.423 0 000-1.818l2.268-2.268a2.423 2.423 0 001.818 0l2.268 2.268a2.423 2.423 0 000 1.818l-2.268 2.268A2.473 2.473 0 008 11z" />
                 </svg>
                 <span className="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">
-                  Quick action
+                  {firstButtonDescription}{" "}
                 </span>
               </button>
               <button
@@ -86,7 +111,7 @@ function Tabs() {
                   <path d="M9.043 6.293S9.79 1.905 6.745 0A5.37 5.37 0 014.72 3.887C3.42 5.03.974 7.6 1 10.34A6.285 6.285 0 004.451 16a3.984 3.984 0 011.394-2.755 3.253 3.253 0 001.246-2.185 5.856 5.856 0 013.1 4.881v.013a5.883 5.883 0 003.428-5.106c.216-2.574-1.194-6.074-2.445-7.218a6.793 6.793 0 01-2.13 2.663z" />
                 </svg>
                 <span className="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">
-                  Quick action
+                  {secondButtonDescription}{" "}
                 </span>
               </button>
               <button
@@ -103,7 +128,7 @@ function Tabs() {
                   <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 10c-1.1 0-2-.9-2-2 0-.2 0-.3.1-.5L3.6 5 5 3.6l2.5 2.5c.2-.1.3-.1.5-.1 1.1 0 2 .9 2 2s-.9 2-2 2z" />
                 </svg>
                 <span className="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">
-                  Quick action
+                  {thirdButtonDescription}{" "}
                 </span>
               </button>
               <button
@@ -120,7 +145,7 @@ function Tabs() {
                   <path d="M8 9v6a8 8 0 008-8V1a8 8 0 00-8 8zM0 6v3a6 6 0 006 6v-3a6 6 0 00-6-6z" />
                 </svg>
                 <span className="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">
-                  Quick action
+                  {fourthButtonDescription}{" "}
                 </span>
               </button>
               <button
@@ -137,7 +162,7 @@ function Tabs() {
                   <path d="M14.936 6.007H8.358l1.594-4.685c.3-.997-.897-1.794-1.694-.997L.284 8.3c-.598.598-.199 1.694.698 1.694H7.56l-1.594 4.685c-.3.997.897 1.794 1.694.997L15.633 7.7c.598-.598.2-1.694-.697-1.694z" />
                 </svg>
                 <span className="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">
-                  Quick action
+                  {fifthButtonDescription}{" "}
                 </span>
               </button>
             </div>
@@ -171,30 +196,10 @@ function Tabs() {
                     />
                   </figure>
                   <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
-                    <h4 className="h4 mb-2">
-                      Optimize and scale, easy to start
-                    </h4>
+                    <h4 className="h4 mb-2">{firstTitlesOfDescription} </h4>
                     <p className="text-lg text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      {descriptionContent1}
                     </p>
-                    <a
-                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
-                      href="#0"
-                    >
-                      <span className="text-sm">Learn more</span>
-                      <svg
-                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
-                      </svg>
-                    </a>
                   </div>
                 </article>
               </Transition>
@@ -222,30 +227,10 @@ function Tabs() {
                     />
                   </figure>
                   <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pl-16 md:max-w-lg lg:max-w-xl md:ml-auto">
-                    <h4 className="h4 mb-2">
-                      Easy to start, optimize and scale
-                    </h4>
+                    <h4 className="h4 mb-2">{secondTitlesOfDescription} </h4>
                     <p className="text-lg text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      {descriptionContent2}
                     </p>
-                    <a
-                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
-                      href="#0"
-                    >
-                      <span className="text-sm">Learn more</span>
-                      <svg
-                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
-                      </svg>
-                    </a>
                   </div>
                 </article>
               </Transition>
@@ -273,30 +258,10 @@ function Tabs() {
                     />
                   </figure>
                   <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
-                    <h4 className="h4 mb-2">
-                      Optimize and scale, easy to start
-                    </h4>
+                    <h4 className="h4 mb-2">{thirdTitlesOfDescription} </h4>
                     <p className="text-lg text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      {descriptionContent3}
                     </p>
-                    <a
-                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
-                      href="#0"
-                    >
-                      <span className="text-sm">Learn more</span>
-                      <svg
-                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
-                      </svg>
-                    </a>
                   </div>
                 </article>
               </Transition>
@@ -324,30 +289,10 @@ function Tabs() {
                     />
                   </figure>
                   <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pl-16 md:max-w-lg lg:max-w-xl md:ml-auto">
-                    <h4 className="h4 mb-2">
-                      Easy to start, optimize and scale
-                    </h4>
+                    <h4 className="h4 mb-2">{fourthTitlesOfDescription} </h4>
                     <p className="text-lg text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      {descriptionContent4}
                     </p>
-                    <a
-                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
-                      href="#0"
-                    >
-                      <span className="text-sm">Learn more</span>
-                      <svg
-                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
-                      </svg>
-                    </a>
                   </div>
                 </article>
               </Transition>
@@ -375,30 +320,10 @@ function Tabs() {
                     />
                   </figure>
                   <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
-                    <h4 className="h4 mb-2">
-                      Optimize and scale, easy to start
-                    </h4>
+                    <h4 className="h4 mb-2">{fifthTitlesOfDescription} </h4>
                     <p className="text-lg text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      {descriptionContent5}
                     </p>
-                    <a
-                      className="btn-sm text-white bg-green-600 hover:bg-green-700 mt-6"
-                      href="#0"
-                    >
-                      <span className="text-sm">Learn more</span>
-                      <svg
-                        className="w-3 h-3 fill-current text-green-400 shrink-0 ml-2"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
-                      </svg>
-                    </a>
                   </div>
                 </article>
               </Transition>

@@ -9,7 +9,16 @@ import {
 
 import CompanyCar from "../images/car.jpg";
 
-function Contact() {
+function Contact({
+  header,
+  description,
+  phoneNumber,
+  emailAddress,
+  firstSocialTitle,
+  firstSocialLink,
+  secondSocialTitle,
+  secondSocialLink,
+}) {
   const [isHovering, setIsHovering] = useState({
     phoneNumber: false,
     mail: false,
@@ -40,7 +49,7 @@ function Contact() {
               data-aos="fade-up"
               data-aos-anchor="[data-aos-id-tabs]"
             >
-              Kontakt
+              {header}
             </h2>
             <p
               className="text-xl text-gray-400"
@@ -48,7 +57,7 @@ function Contact() {
               data-aos-delay="200"
               data-aos-anchor="[data-aos-id-tabs]"
             >
-              Skontaktuj się z nami
+              {description}
             </p>
           </div>
           <div
@@ -76,7 +85,7 @@ function Contact() {
                   color={isHovering.phoneNumber ? "#16a34a" : ""}
                 />
               </div>
-              +48 731 188 388
+              {phoneNumber}
             </a>
             <a
               className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
@@ -92,11 +101,11 @@ function Contact() {
                   color={isHovering.mail ? "#16a34a" : ""}
                 />
               </div>
-              autoszybybielsko@gmail.com
+              {emailAddress}
             </a>
             <a
               className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
-              href="https://www.facebook.com/greenglassbielsko"
+              href={firstSocialLink}
               target="_blank"
               id="facebook"
               onMouseOver={handleHover}
@@ -108,11 +117,11 @@ function Contact() {
                   color={isHovering.facebook ? "#16a34a" : ""}
                 />
               </div>
-              Nasz profil na Facebooku
+              {firstSocialTitle}
             </a>
             <a
               className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
-              href="https://www.instagram.com/greenglassbielsko/"
+              href={secondSocialLink}
               target="_blank"
               id="instagram"
               onMouseOver={handleHover}
@@ -124,7 +133,7 @@ function Contact() {
                   color={isHovering.instagram ? "#16a34a" : ""}
                 />
               </div>
-              Nasz profil na Instagramie
+              {secondSocialTitle}
             </a>
           </div>
         </div>

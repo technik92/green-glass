@@ -30,7 +30,7 @@ import image26 from "../images/carousel/026.jpeg";
 
 import { ArrowRightIcon, ArrowLeftIcon } from "@/icons";
 
-const Carousel2 = () => {
+const Carousel2 = ({ header, description }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
@@ -99,10 +99,10 @@ const Carousel2 = () => {
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
               <h2 className="h2" data-aos="fade-up">
-                Galeria naszych realizacji
+                {header}
               </h2>
               <p className="text-xl text-gray-400" data-aos="fade-right">
-                Sprawdź nasze realizacje, zdjęcia z ostatnich napraw
+                {description}
               </p>
             </div>
 
