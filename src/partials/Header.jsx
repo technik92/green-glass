@@ -178,7 +178,7 @@ function Header() {
                     href="/#kontakt"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
-                    Kontakt{" "}
+                    Kontakt
                   </Link>
                 </li>
               </ul>
