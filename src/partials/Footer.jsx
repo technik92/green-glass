@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from "../images/logo.png";
 import Image from "next/image";
 
-function Footer() {
+function Footer({ firstSocialLink, secondSocialLink }) {
   return (
     <footer>
       <div className="py-12 md:py-16">
@@ -12,7 +12,7 @@ function Footer() {
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li className="ml-4">
                 <Link
-                  href="https://www.facebook.com/greenglassbielsko"
+                  href={firstSocialLink}
                   target="_blank"
                   className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Facebook"
@@ -28,7 +28,7 @@ function Footer() {
               </li>
               <li className="ml-4">
                 <Link
-                  href="https://www.instagram.com/greenglassbielsko/"
+                  href={secondSocialLink}
                   target="_blank"
                   className="flex justify-center items-center text-green-600 bg-gray-800 hover:text-gray-100 hover:bg-green-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Instagram"

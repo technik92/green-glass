@@ -96,7 +96,10 @@ export default function Home({ websiteData }) {
             secondSocialTitle={contactSecondSocialTitle}
             secondSocialLink={contactSecondSocialLink}
           />
-          <Footer />
+          <Footer
+            firstSocialLink={contactFirstSocialLink}
+            secondSocialLink={contactSecondSocialLink}
+          />
         </div>
       </main>
     </>
