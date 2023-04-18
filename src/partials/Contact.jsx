@@ -89,7 +89,8 @@ function Contact({
             </a>
             <a
               className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
-              href="mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
+              href={`mailto:${emailAddress} ?subject=Wiadomość ze strony green-glass.pl`}
+              // "mailto:autoszybybielsko@gmail.com e-mail?subject=Wiadomość ze strony green-glass.pl"
               target="_blank"
               id="mail"
               onMouseOver={handleHover}
