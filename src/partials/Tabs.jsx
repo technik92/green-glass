@@ -45,14 +45,12 @@ function Tabs({
 
   useEffect(() => {
     heightFix();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
 
   return (
     <section>
       <div id="nasze-atuty" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-zinc-700">
-          {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
             <h2
               className="h2 mb-4"
@@ -70,10 +68,7 @@ function Tabs({
               {description}
             </p>
           </div>
-
-          {/* Section content */}
           <div>
-            {/* Tabs buttons */}
             <div
               className="flex flex-wrap justify-center -m-2"
               data-aos="fade-up"
@@ -166,14 +161,11 @@ function Tabs({
                 </span>
               </button>
             </div>
-
-            {/* Tabs items */}
             <div
               className="relative flex flex-col mt-16"
               data-aos="fade-up"
               ref={tabs}
             >
-              {/* Item 1 */}
               <Transition
                 show={tab === 1}
                 appear={true}
@@ -203,8 +195,6 @@ function Tabs({
                   </div>
                 </article>
               </Transition>
-
-              {/* Item 2 */}
               <Transition
                 show={tab === 2}
                 appear={true}
@@ -234,8 +224,6 @@ function Tabs({
                   </div>
                 </article>
               </Transition>
-
-              {/* Item 3 */}
               <Transition
                 show={tab === 3}
                 appear={true}
@@ -265,8 +253,6 @@ function Tabs({
                   </div>
                 </article>
               </Transition>
-
-              {/* Item 4 */}
               <Transition
                 show={tab === 4}
                 appear={true}
@@ -296,8 +282,6 @@ function Tabs({
                   </div>
                 </article>
               </Transition>
-
-              {/* Item 5 */}
               <Transition
                 show={tab === 5}
                 appear={true}

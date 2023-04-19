@@ -7,10 +7,10 @@ import PageIllustration from "@/partials/PageIllustration";
 import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
 import AboutAs from "@/partials/AboutAs";
-import Carousel from "@/partials/Carousel";
 import Contact from "@/partials/Contact";
 
 import { createClient } from "contentful";
+import Carousel from "@/partials/Carousel";
 
 export default function Home({ websiteData }) {
   const {
@@ -77,6 +77,7 @@ export default function Home({ websiteData }) {
             descriptionContent4={tabsDescription4}
             descriptionContent5={tabsDescription5}
           />
+
           <Carousel header={carouselHeader} description={carouselDescription} />
           <Testimonials
             header={testimonialsHeader}

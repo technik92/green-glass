@@ -22,7 +22,6 @@ function AboutAs({
     <section>
       <div id="o-nas" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-10 pb-12 md:pt-16 md:pb-20">
-          {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4" data-aos="fade-up">
               {header}
@@ -35,10 +34,7 @@ function AboutAs({
               {description}
             </p>
           </div>
-
-          {/* Items */}
           <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:gap-16 items-start md:max-w-none">
-            {/* 1st item */}
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
@@ -89,8 +85,6 @@ function AboutAs({
                 {firstCharacteristicDescription}
               </p>
             </div>
-
-            {/* 2nd item */}
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
@@ -141,8 +135,6 @@ function AboutAs({
                 {secondCharacteristicDescription}
               </p>
             </div>
-
-            {/* 3rd item */}
             <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"

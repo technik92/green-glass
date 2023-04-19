@@ -12,7 +12,6 @@ function HeroHome({ header, description }) {
           data-aos="fade-up"
           data-aos-delay="400"
         ></div>
-
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
@@ -26,8 +25,6 @@ function HeroHome({ header, description }) {
               {description}
             </p>
           </div>
-
-          {/* Hero image */}
           <div>
             <div
               className="relative flex justify-center items-center"
