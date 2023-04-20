@@ -126,5 +126,4 @@ function Testimonials({
     </section>
   );
 }
-
 export default Testimonials;
