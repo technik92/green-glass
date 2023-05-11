@@ -18,24 +18,18 @@ function PageNotFound() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen overflow-hidden relative">
-        {/*  Site header */}
         <Header />
-
-        {/*  Page content */}
         <main className="grow">
-          {/*  Page illustration */}
           <div
             className="relative max-w-6xl mx-auto h-0 pointer-events-none"
             aria-hidden="true"
           >
             <PageIllustration />
           </div>
-
           <section className="relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
               <div className="pt-32 pb-12 md:pt-40 md:pb-20">
                 <div className="max-w-3xl mx-auto text-center">
-                  {/* Top image */}
                   <div
                     className="relative inline-flex flex-col mb-6"
                     data-aos="fade-up"
@@ -60,7 +54,6 @@ function PageNotFound() {
                       />
                     </svg>
                   </div>
-                  {/* 404 content */}
                   <h1
                     className="h1 mb-4"
                     data-aos="fade-up"
@@ -88,8 +81,6 @@ function PageNotFound() {
             </div>
           </section>
         </main>
-
-        {/*  Site footer */}
         <Footer />
       </div>
     </>

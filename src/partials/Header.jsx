@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Dropdown from "../utils/Dropdown";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -102,7 +101,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-
           <div className="md:hidden">
             <button
               ref={trigger}
