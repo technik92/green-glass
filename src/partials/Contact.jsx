@@ -19,25 +19,6 @@ function Contact({
   secondSocialTitle,
   secondSocialLink,
 }) {
-  const [isHovering, setIsHovering] = useState({
-    phoneNumber: false,
-    mail: false,
-    facebook: false,
-    instagram: false,
-  });
-
-  const handleHover = (event) => {
-    const elementName = event.currentTarget.id;
-
-    setIsHovering({ ...isHovering, [elementName]: true });
-  };
-
-  const handleMouseOut = (event) => {
-    const elementName = event.currentTarget.id;
-
-    setIsHovering({ ...isHovering, [elementName]: false });
-  };
-
   return (
     <section>
       <div id="kontakt" className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -70,19 +51,13 @@ function Contact({
               height="auto"
               width="auto"
             />
-
             <a
               className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm hover:bg-green-600 group"
               href="tel:+48731188388"
               id="phoneNumber"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlinePhone
-                  className="h-4 w-4"
-                  color={isHovering.phoneNumber ? "#16a34a" : ""}
-                />
+                <AiOutlinePhone className="h-4 w-4" />
               </div>
               {phoneNumber}
             </a>
@@ -91,14 +66,9 @@ function Contact({
               href={`mailto:${emailAddress} ?subject=Wiadomość ze strony green-glass.pl`}
               target="_blank"
               id="mail"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineMail
-                  className="h-4 w-4"
-                  color={isHovering.mail ? "#16a34a" : ""}
-                />
+                <AiOutlineMail className="h-4 w-4" />
               </div>
               {emailAddress}
             </a>
@@ -107,14 +77,9 @@ function Contact({
               href={firstSocialLink}
               target="_blank"
               id="facebook"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineFacebook
-                  className="h-4 w-4"
-                  color={isHovering.facebook ? "#16a34a" : ""}
-                />
+                <AiOutlineFacebook className="h-4 w-4" />
               </div>
               {firstSocialTitle}
             </a>
@@ -123,14 +88,9 @@ function Contact({
               href={secondSocialLink}
               target="_blank"
               id="instagram"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineInstagram
-                  className="h-4 w-4"
-                  color={isHovering.instagram ? "#16a34a" : ""}
-                />
+                <AiOutlineInstagram className="h-4 w-4" />
               </div>
               {secondSocialTitle}
             </a>
