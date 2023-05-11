@@ -9,7 +9,7 @@ import Footer from "../partials/Footer";
 
 import NotFoundImage from "../images/404.jpg";
 
-function PageNotFound() {
+export default function FourOhFour() {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ function PageNotFound() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen overflow-hidden relative">
-        <Header />
+        {/* <Header /> */}
         <main className="grow">
           <div
             className="relative max-w-6xl mx-auto h-0 pointer-events-none"
@@ -71,9 +71,10 @@ function PageNotFound() {
                       href="/"
                       className="text-green-600 hover:text-gray-200 transition duration-150 ease-in-out"
                     >
+                      {" "}
                       strony głównej
                     </Link>
-                    , która istnieje albo spróbuj sprawdzić czy wpisał*ś
+                    , która istnieje albo spróbuj sprawdzić czy wpisałeś
                     poprawny link.
                   </p>
                 </div>
@@ -81,10 +82,7 @@ function PageNotFound() {
             </div>
           </section>
         </main>
-        <Footer />
       </div>
     </>
   );
 }
-
-export default PageNotFound;
