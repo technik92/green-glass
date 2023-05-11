@@ -2,11 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-
-import Header from "../partials/Header";
 import PageIllustration from "../partials/PageIllustration";
-import Footer from "../partials/Footer";
-
 import NotFoundImage from "../images/404.jpg";
 
 export default function FourOhFour() {
@@ -18,7 +14,6 @@ export default function FourOhFour() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen overflow-hidden relative">
-        {/* <Header /> */}
         <main className="grow">
           <div
             className="relative max-w-6xl mx-auto h-0 pointer-events-none"
