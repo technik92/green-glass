@@ -55,6 +55,7 @@ function Contact({
               className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href="tel:+48731188388"
               id="phoneNumber"
+              aria-label="Call on phone number"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
                 <AiOutlinePhone className="h-4 w-4" />
@@ -66,6 +67,7 @@ function Contact({
               href={`mailto:${emailAddress} ?subject=Wiadomość ze strony green-glass.pl`}
               target="_blank"
               id="mail"
+              aria-label="send email to green glass"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
                 <AiOutlineMail className="h-4 w-4" />
@@ -77,6 +79,7 @@ function Contact({
               href={firstSocialLink}
               target="_blank"
               id="facebook"
+              aria-label="open link to green glass profile on social media"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
                 <AiOutlineFacebook className="h-4 w-4" />
@@ -88,6 +91,7 @@ function Contact({
               href={secondSocialLink}
               target="_blank"
               id="instagram"
+              aria-label="open link to green glass profile on social media"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
                 <AiOutlineInstagram className="h-4 w-4" />
