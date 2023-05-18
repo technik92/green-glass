@@ -52,7 +52,7 @@ function Contact({
               width="auto"
             />
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm hover:bg-green-600 group"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href="tel:+48731188388"
               id="phoneNumber"
             >
@@ -62,7 +62,7 @@ function Contact({
               {phoneNumber}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={`mailto:${emailAddress} ?subject=Wiadomość ze strony green-glass.pl`}
               target="_blank"
               id="mail"
@@ -73,7 +73,7 @@ function Contact({
               {emailAddress}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={firstSocialLink}
               target="_blank"
               id="facebook"
@@ -84,7 +84,7 @@ function Contact({
               {firstSocialTitle}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={secondSocialLink}
               target="_blank"
               id="instagram"
