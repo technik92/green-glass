@@ -38,16 +38,6 @@ function HeroHome({ header, description }) {
                 height="504"
                 alt="Hero"
               />
-              <a
-                className="absolute group"
-                href="#0"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setVideoModalOpen(true);
-                }}
-                aria-controls="modal"
-              ></a>
             </div>
           </div>
         </div>

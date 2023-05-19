@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import {
   AiOutlinePhone,
@@ -19,25 +19,6 @@ function Contact({
   secondSocialTitle,
   secondSocialLink,
 }) {
-  const [isHovering, setIsHovering] = useState({
-    phoneNumber: false,
-    mail: false,
-    facebook: false,
-    instagram: false,
-  });
-
-  const handleHover = (event) => {
-    const elementName = event.currentTarget.id;
-
-    setIsHovering({ ...isHovering, [elementName]: true });
-  };
-
-  const handleMouseOut = (event) => {
-    const elementName = event.currentTarget.id;
-
-    setIsHovering({ ...isHovering, [elementName]: false });
-  };
-
   return (
     <section>
       <div id="kontakt" className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -70,67 +51,50 @@ function Contact({
               height="auto"
               width="auto"
             />
-
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm hover:bg-green-600 group"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href="tel:+48731188388"
               id="phoneNumber"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
+              aria-label="Call on phone number"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlinePhone
-                  className="h-4 w-4"
-                  color={isHovering.phoneNumber ? "#16a34a" : ""}
-                />
+                <AiOutlinePhone className="h-4 w-4" />
               </div>
               {phoneNumber}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={`mailto:${emailAddress} ?subject=Wiadomość ze strony green-glass.pl`}
               target="_blank"
               id="mail"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
+              aria-label="send email to green glass"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineMail
-                  className="h-4 w-4"
-                  color={isHovering.mail ? "#16a34a" : ""}
-                />
+                <AiOutlineMail className="h-4 w-4" />
               </div>
               {emailAddress}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={firstSocialLink}
               target="_blank"
               id="facebook"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
+              aria-label="open link to green glass profile on social media"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineFacebook
-                  className="h-4 w-4"
-                  color={isHovering.facebook ? "#16a34a" : ""}
-                />
+                <AiOutlineFacebook className="h-4 w-4" />
               </div>
               {firstSocialTitle}
             </a>
             <a
-              className="flex md:flex-col items-center justify-center gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
+              className="flex md:flex-col items-center md:justify-center justify-left pl-10 gap-4 bg-gray-700 py-3 rounded-sm group hover:bg-green-600"
               href={secondSocialLink}
               target="_blank"
               id="instagram"
-              onMouseOver={handleHover}
-              onMouseOut={handleMouseOut}
+              aria-label="open link to green glass profile on social media"
             >
               <div className="flex items-center justify-center p-3 rounded-full bg-green-600 group-hover:bg-white">
-                <AiOutlineInstagram
-                  className="h-4 w-4"
-                  color={isHovering.instagram ? "#16a34a" : ""}
-                />
+                <AiOutlineInstagram className="h-4 w-4" />
               </div>
               {secondSocialTitle}
             </a>

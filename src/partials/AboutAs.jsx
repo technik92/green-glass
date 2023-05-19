@@ -77,10 +77,7 @@ function AboutAs({
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="h4 mb-2">
-                <span className="text-gray-400">1</span>
-                {firstCharacteristicHeader}
-              </h4>
+              <div className="h4 mb-2">{firstCharacteristicHeader}</div>
               <p className="text-lg text-gray-400 text-center">
                 {firstCharacteristicDescription}
               </p>
@@ -127,10 +124,7 @@ function AboutAs({
                   />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">
-                <span className="text-gray-400">2</span>
-                {secondCharacteristicHeader}
-              </h4>
+              <div className="h4 mb-2">{secondCharacteristicHeader}</div>
               <p className="text-lg text-gray-400 text-center">
                 {secondCharacteristicDescription}
               </p>
@@ -166,10 +160,7 @@ function AboutAs({
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="h4 mb-2">
-                <span className="text-gray-400">3</span>
-                {thirdCharacteristicHeader}
-              </h4>
+              <div className="h4 mb-2">{thirdCharacteristicHeader}</div>
               <p className="text-lg text-gray-400 text-center">
                 {thirdCharacteristicDescription}
               </p>

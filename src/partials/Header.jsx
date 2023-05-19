@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Dropdown from "../utils/Dropdown";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -54,28 +53,13 @@ function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/"
-                  className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#o-nas"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   O nas
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#nasze-atuty"
-                  className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Nasze atuty
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/#galeria"
@@ -102,7 +86,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-
           <div className="md:hidden">
             <button
               ref={trigger}
@@ -135,26 +118,10 @@ function Header() {
               <ul className="bg-gray-800 px-4 py-2">
                 <li>
                   <Link
-                    href="/"
-                    className="flex text-gray-300 hover:text-gray-200 py-2"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/#o-nas"
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     O nas
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/#nasze-atuty"
-                    className="flex text-gray-300 hover:text-gray-200 py-2"
-                  >
-                    Nasze atuty
                   </Link>
                 </li>
                 <li>

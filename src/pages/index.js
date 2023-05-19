@@ -4,7 +4,6 @@ import Header from "@/partials/Header";
 import Footer from "@/partials/Footer";
 import HeroHome from "@/partials/HeroHome";
 import PageIllustration from "@/partials/PageIllustration";
-import Tabs from "@/partials/Tabs";
 import Testimonials from "@/partials/Testimonials";
 import AboutAs from "@/partials/AboutAs";
 import Contact from "@/partials/Contact";
@@ -66,18 +65,6 @@ export default function Home({ websiteData }) {
             charasteristicsDescriptions={aboutUsCharacteristicsDescriptions}
           />
           <PageIllustration />
-          <Tabs
-            header={tabHeader}
-            description={tabsDescription}
-            buttonTitles={tabsButtonsTitles}
-            titlesOfDescription={tabsButtonsDescription}
-            descriptionContent1={tabsDescription1}
-            descriptionContent2={tabsDescription2}
-            descriptionContent3={tabsDescription3}
-            descriptionContent4={tabsDescription4}
-            descriptionContent5={tabsDescription5}
-          />
-
           <Carousel header={carouselHeader} description={carouselDescription} />
           <Testimonials
             header={testimonialsHeader}
