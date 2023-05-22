@@ -4,7 +4,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 const Carousel = ({ header, description, carouselImages }) => {
-  console.log("carousem img: ", carouselImages);
   return (
     <>
       <section>
@@ -30,12 +29,12 @@ const Carousel = ({ header, description, carouselImages }) => {
                   <Splide aria-labelledby="GreenGlassImages">
                     {carouselImages.map((image) => {
                       return (
-                        <SplideSlide key="image">
+                        <SplideSlide key={image.sys.id}>
                           <Image
                             src={"https:" + image.fields.file.url}
                             key={image.sys.id}
                             alt="Repair car window"
-                            height="700"
+                            height="675"
                             width="1200"
                           />
                         </SplideSlide>
