@@ -26,7 +26,8 @@ import image23 from "../images/carousel/023.jpg";
 import image25 from "../images/carousel/025.jpeg";
 import image26 from "../images/carousel/026.jpeg";
 
-const Carousel = ({ header, description }) => {
+const Carousel = ({ header, description, carouselImages }) => {
+  console.log("carousem img: ", carouselImages);
   return (
     <>
       <section>
@@ -119,6 +120,40 @@ const Carousel = ({ header, description }) => {
                       <SplideSlide>
                         <Image src={image26} alt="Repair car window" />
                       </SplideSlide>
+                    </Splide>
+                  </div>
+                </div>
+                <div>
+                  {carouselImages.map((image) => {
+                    return (
+                      <div key={image.sys.id}>
+                        {"https:" + image.fields.file.url}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="grid place-items-center py-8 bg-gray-800">
+                  <div
+                    className="carousel-container mx-auto"
+                    data-aos-id-carousel
+                    data-aos="fade-up"
+                    data-aos-anchor="[data-aos-id-carousel]"
+                  >
+                    {carouselImages.id}
+                    <Splide aria-labelledby="GreenGlassImages">
+                      {carouselImages.map((image) => {
+                        return (
+                          <SplideSlide key="image">
+                            <Image
+                              src={"https:" + image.fields.file.url}
+                              key={image.sys.id}
+                              alt="Repair car window"
+                              height="700"
+                              width="1000"
+                            />
+                          </SplideSlide>
+                        );
+                      })}
                     </Splide>
                   </div>
                 </div>
