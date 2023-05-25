@@ -8,7 +8,7 @@ const Carousel = ({ header, description, carouselImages }) => {
     <>
       <section>
         <div id="galeria" className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className=" border-t border-zinc-700">
+          <div className=" py-12 md:py-20 border-t border-zinc-700">
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
               <h2 className="h2" data-aos="fade-up">
                 {header}
