@@ -1,8 +1,8 @@
 <p>
-    <img src="https://img.shields.io/github/last-commit/kamilsobik/mms-project-ember?style=flat-square" alt="Last update">
+    <img src="https://img.shields.io/github/last-commit/technik92/green-glass?style=flat-square" alt="Last update">
 </p>
 <p align="center">
-    <img src="https://i.ibb.co/hK8pFzr/Screenshot-2023-05-26-at-15-28-44.png" alt="Screen Shot">
+    <img src="https://i.ibb.co/D4wH2xY/green-glass-5.png" alt="Screen Shot">
 </p>
 
 # Green Glass
@@ -26,8 +26,8 @@ Home page of a company specializing in cars window replacement. It contains info
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
-<p align="center">
-  ![Untitled](https://github.com/kamilsobik/readme_temaplate/assets/99078349/6f3e952a-6831-4e46-a52e-0f350d4094f6)
+<p align="center">    
+<img src='https://svgshare.com/i/tau.svg' title='' />
 </p>
 
 &nbsp;
@@ -68,19 +68,19 @@ You will need the following things properly installed on your computer.
 ## 📺 Screenshots
 
 <p align="center">
-    <img src="https://i.ibb.co/qmMRLL5/Screenshot-2023-05-26-at-15-27-18.png" alt="Screen Shot">
+    <img src="https://i.ibb.co/r32KnTL/green-glass-1.png" alt="Screen Shot">
 </p>
 
 <p align="center">
-    <img src="https://i.ibb.co/wgH1P0P/Screenshot-2023-05-26-at-15-27-49.png" alt="Screen Shot">
+    <img src="https://i.ibb.co/RPzrCfF/green-glass-2.png" alt="Screen Shot">
 </p>
 
 <p align="center">
-    <img src="https://i.ibb.co/tL8Gyfh/Screenshot-2023-05-26-at-15-27-31.png" alt="Screen Shot">
+    <img src="https://i.ibb.co/XLS0mSV/green-glass-3.png" alt="Screen Shot">
 </p>
 
 <p align="center">
-    <img src="https://i.ibb.co/KykxSVt/Screenshot-2023-05-26-at-15-27-58.png" alt="Screen Shot">
+    <img src="https://i.ibb.co/vXSVBjz/green-glass-4.png" alt="Screen Shot">
 </p>
 
 &nbsp;
