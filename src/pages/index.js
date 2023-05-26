@@ -19,15 +19,6 @@ export default function Home({ websiteData }) {
     aboutUsDescription,
     aboutUsCharacteristicsHeaders,
     aboutUsCharacteristicsDescriptions,
-    tabHeader,
-    tabsDescription,
-    tabsButtonsTitles,
-    tabsButtonsDescription,
-    tabsDescription1,
-    tabsDescription2,
-    tabsDescription3,
-    tabsDescription4,
-    tabsDescription5,
     carouselHeader,
     carouselDescription,
     testimonialsHeader,
@@ -44,6 +35,7 @@ export default function Home({ websiteData }) {
     contactFirstSocialLink,
     contactSecondSocialTitle,
     contactSecondSocialLink,
+    carouselImages,
   } = websiteData;
 
   return (
@@ -65,7 +57,11 @@ export default function Home({ websiteData }) {
             charasteristicsDescriptions={aboutUsCharacteristicsDescriptions}
           />
           <PageIllustration />
-          <Carousel header={carouselHeader} description={carouselDescription} />
+          <Carousel
+            header={carouselHeader}
+            description={carouselDescription}
+            carouselImages={carouselImages}
+          />
           <Testimonials
             header={testimonialsHeader}
             description={testimonialsDescription}
