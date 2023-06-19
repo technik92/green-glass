@@ -1,6 +1,4 @@
-import React from "react";
-
-function PageIllustration() {
+function PageIlustrationLogo() {
   return (
     <svg
       className="absolute top-0 right-0 transform translate-x-1/2 -mr-16"
@@ -30,5 +28,4 @@ function PageIllustration() {
     </svg>
   );
 }
-
-export default PageIllustration;
+export default PageIlustrationLogo;

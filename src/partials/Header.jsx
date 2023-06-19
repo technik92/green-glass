@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Logo from "../images/logo.png";
+import HeaderLogo from "@/icons/HeaderLogo";
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -102,15 +103,7 @@ function Header() {
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
             >
               <span className="sr-only">Menu</span>
-              <svg
-                className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="4" width="24" height="2" rx="1" />
-                <rect y="11" width="24" height="2" rx="1" />
-                <rect y="18" width="24" height="2" rx="1" />
-              </svg>
+              <HeaderLogo />
             </button>
             <nav
               id="mobile-nav"
