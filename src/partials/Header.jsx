@@ -10,6 +10,13 @@ function Header() {
   const trigger = useRef(null);
   const mobileNav = useRef(null);
 
+  const objectOfLinks = {
+    aboutas: "/#o-nas",
+    gallery: "/#galeria",
+    testimonial: "/#opinie",
+    contact: "/#kontakt",
+  };
+
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return;
@@ -39,13 +46,13 @@ function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 mr-4">
-            <Link href="/" className="block" aria-label="Cruip">
+            <Link href="/" className="block">
               <Image
                 className="shrink-0 mr-4"
                 src={Logo}
                 width="60"
                 height="60"
-                alt="Author 01"
+                alt="Logo of company - text green glass"
               />
             </Link>
           </div>
@@ -53,7 +60,7 @@ function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/#o-nas"
+                  href={objectOfLinks.aboutas}
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   O nas
@@ -62,7 +69,7 @@ function Header() {
 
               <li>
                 <Link
-                  href="/#galeria"
+                  href={objectOfLinks.gallery}
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Galeria realizacji
@@ -70,7 +77,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#opinie"
+                  href={objectOfLinks.testimonial}
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Opinie klientów
@@ -78,7 +85,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href="/#kontakt"
+                  href={objectOfLinks.contact}
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Kontakt
@@ -118,7 +125,7 @@ function Header() {
               <ul className="bg-gray-800 px-4 py-2">
                 <li>
                   <Link
-                    href="/#o-nas"
+                    href={objectOfLinks.aboutas}
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     O nas
@@ -126,7 +133,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#galeria"
+                    href={objectOfLinks.gallery}
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Galeria realizacji
@@ -134,7 +141,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#opinie"
+                    href={objectOfLinks.testimonial}
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Opinie klientów
@@ -142,7 +149,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/#kontakt"
+                    href={objectOfLinks.contact}
                     className="flex text-gray-300 hover:text-gray-200 py-2"
                   >
                     Kontakt
