@@ -33,7 +33,7 @@ const Carousel = ({ header, description, carouselImages }) => {
                           <Image
                             src={"https:" + image.fields.file.url}
                             key={image.sys.id}
-                            alt="Repair car window"
+                            alt={image.fields.description}
                             height="675"
                             width="1200"
                           />
