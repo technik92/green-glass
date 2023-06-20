@@ -15,7 +15,7 @@ Home page of a company specializing in cars window replacement. It contains info
 
 - Information about servives
 - Customer opinions
-- gallery of implementation
+- Gallery of implementation
 - Contact (phone, email, social media)
 
 &nbsp;
