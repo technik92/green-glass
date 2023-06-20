@@ -19,7 +19,7 @@ const nextConfig = {
         headers: [
           {
             key: "X-Robots-Tag",
-            value: "noindex",
+            value: "max-snippet:-1",
           },
         ],
         source: "/:path*",
