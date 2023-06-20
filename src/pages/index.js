@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "@/partials/Header";
 import Footer from "@/partials/Footer";
 import HeroHome from "@/partials/HeroHome";
-import PageIllustration from "@/partials/PageIllustration";
+import PageIllustrationLogo from "../icons/PageIllustrationLogo.js";
 import Testimonials from "@/partials/Testimonials";
 import AboutAs from "@/partials/AboutAs";
 import Contact from "@/partials/Contact";
@@ -56,7 +56,7 @@ export default function Home({ websiteData }) {
             charasteristicsHeaders={aboutUsCharacteristicsHeaders}
             charasteristicsDescriptions={aboutUsCharacteristicsDescriptions}
           />
-          <PageIllustration />
+          <PageIllustrationLogo />
           <Carousel
             header={carouselHeader}
             description={carouselDescription}
