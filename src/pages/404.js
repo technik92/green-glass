@@ -10,7 +10,7 @@ export default function FourOhFour() {
   return (
     <>
       <Head>
-        <title>Green-glass | Ta strona nie istnieje</title>
+        <title>Green Glass Mobilne Auto Szyby</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
